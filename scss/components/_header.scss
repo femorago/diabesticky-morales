@@ -1,0 +1,64 @@
+.header-container {
+    
+    padding: 5px 0 0;
+    display: flex;
+    justify-content: center;
+
+    .header {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            padding: 10px;
+            
+            }
+
+            .logo-size {
+                display: flex;
+                justify-content: center;
+                padding: 5px 0 8px 0 ;
+                margin: 0;
+                width: 100%;
+
+            }
+
+            @media screen and (max-width: 576px) {
+                display: none;
+        }
+
+        .onda {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        .redes-header {
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ig-header {
+                width: 30px;
+            }
+            .wp-header {
+                width: 30px;
+            }
+            .email-header {
+                width: 40px;
+            }
+          
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
+        }
+ 
+    }
+
+}

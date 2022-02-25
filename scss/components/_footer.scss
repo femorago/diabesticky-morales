@@ -1,0 +1,112 @@
+
+.footer-container {
+
+    color: #FFF;
+    width: 100%;
+    height: 220px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .footer {
+
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .contenedor-menu-footer {
+            height: auto;
+
+            .menu-footer {
+
+                margin-top: 20px;
+                height: auto;
+                ul {
+                    li {
+                        list-style-type: none;
+                        margin-top: 5px;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            margin: 15px 0;
+    
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .redes-footer {
+            display: none;
+
+            .redes {
+
+                a {
+
+                    img {
+
+                        .ig-footer{
+                            width: 35px;
+                            margin: 0 10px;
+
+                        }
+
+                        .wp-footer {
+                            width: 35px;
+                            margin: 0 10px;
+
+                        }
+
+                        .email-footer {
+                            width: 45px;
+                            margin-left: 8px;
+                            margin-right: 10px;
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .medios {
+
+        .texto-medios {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+    .desarrollo {
+
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .textos-desarrollo {
+
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .text1 {
+                color: white;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .texto2 {
+                color: white;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+}

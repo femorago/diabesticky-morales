@@ -1,0 +1,57 @@
+@import "../base/variables";
+
+.container {
+    .row {
+        .marco {
+            background-color: $bg-color-card;
+            width: 80%;
+            border-radius: $border-radius-tb;
+            margin: auto;
+            padding: 15px;
+            box-shadow: 1px 2px 2px grey;
+            text-align: center;
+
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 5px;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: all 1s;
+                }
+            }
+
+            h4 {
+                text-align: center;
+            }
+
+            p {
+                color: black;
+                margin: 10px auto;
+                width: 30%;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            a {
+                text-decoration: none;
+                color: red;
+                border: 1px solid red;
+                border-radius: 20px;
+                padding: 2px 12px;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #FFF;
+                    background-color: red;
+                    border: 1px solid red;
+                    border-radius: 20px;
+                    padding: 2px 12px;
+                }
+            }
+        }
+    }
+}
