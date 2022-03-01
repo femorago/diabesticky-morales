@@ -1,0 +1,101 @@
+.contenedor-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        color: red;
+        text-align: center;
+        margin-top: 15px;  
+    }
+
+    p {
+        padding: 30px;
+        text-align: justify; 
+
+        @media screen and (max-width: 576px) {
+            padding: 30px;
+            text-align: justify;
+        }
+    }
+
+    .form {
+        width: 40%;
+        height: 600px;
+        margin: 20px auto 60px;
+        padding-top: 30px;
+        border: 2px dashed black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 576px) {
+            width: 80%;
+            height: 500px;
+        }
+
+        .input {
+            width: 70%;
+            height: 20px;
+            border-bottom: 1px solid black;
+            padding: 20px;
+            margin: 6px;
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+                width: 80%;
+                height: 20px;
+                border-bottom: 1px solid black;
+            }
+        }
+
+        .mensaje {
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .enviar {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: red;
+                border: 1px solid red;
+                border-radius: 20px;
+                padding: 2px 25px;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #FFF;
+                    background-color: red;
+                    border: 1px solid red;
+                    border-radius: 20px;
+                    padding: 2px 25px;
+                    transition: all 1s;
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+                margin: 10px auto 20px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
