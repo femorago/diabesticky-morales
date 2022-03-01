@@ -377,4 +377,80 @@
   transition: all 1s;
 }
 
+.contenedor-fila .foto-protector {
+  margin-top: 50px;
+}
+.contenedor-fila .detalle-flex {
+  margin-top: 50px;
+}
+.contenedor-fila .detalle-flex .variantes {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contenedor-fila .detalle-flex .variantes h2 {
+  font-size: 22px;
+  text-decoration: underline;
+}
+@media screen and (max-width: 576px) {
+  .contenedor-fila .detalle-flex .variantes h2 {
+    font-size: 18px;
+  }
+}
+.contenedor-fila .detalle-flex .variantes p {
+  text-align: left;
+  font-size: 40px;
+  margin-left: 10px;
+  color: red;
+}
+.contenedor-fila .detalle-flex .variantes h4 {
+  text-align: left;
+}
+.contenedor-fila .detalle-flex a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.123);
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+.contenedor-fila .detalle-flex a:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 20px;
+  padding: 4px 12px;
+  transition: all 0.5s;
+}
+
+.description {
+  background-color: rgba(181, 247, 236, 0.5);
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px grey;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+.description h2 {
+  text-decoration: underline;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.description h4 {
+  font-size: 18px;
+  margin: 20px 10px;
+  text-transform: uppercase;
+}
+.description p {
+  margin: 10px;
+}
+@media screen and (max-width: 576px) {
+  .description {
+    margin: 50px 0;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
