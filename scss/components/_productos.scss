@@ -2,8 +2,8 @@
 @import "../base/listas";
 @import "../base/maps";
 
-.container {
-    .row {
+.container-productos {
+    .row-productos {
         .marco {
             background-color: map-get($cards-productos, bg-cards);
             width: 80%;

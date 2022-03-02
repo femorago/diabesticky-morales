@@ -11,8 +11,6 @@
 
         .logo {
             padding: 10px;
-            
-            }
 
             .logo-size {
                 display: flex;
@@ -24,7 +22,8 @@
             }
 
             @media screen and (max-width: 576px) {
-                display: none;
+            display: none;
+            }
         }
 
         .onda {
@@ -35,6 +34,10 @@
 
             img {
                 width: 80%;
+            }
+            
+            @media screen and (max-width: 576px) {
+                display: none;
             }
         }
 
