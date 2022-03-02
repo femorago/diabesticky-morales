@@ -1,0 +1,9 @@
+/* Valores para los cuadros de textos descriptivos */
+
+@mixin contenedor-texto($alto, $margen, $relleno, $redondeo, $sombra) {
+    height: $alto;
+    margin: $margen;
+    padding: $relleno;
+    border-radius: $redondeo;
+    box-shadow: $sombra;
+}

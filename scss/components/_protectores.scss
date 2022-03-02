@@ -1,48 +1,22 @@
-@import "../base/extends";
-@import "../base/mixins";
 
-.section-encabezado {
-    .encabezado {
+.container-protectores {
 
-        h1 {
-            text-align: center;
-            margin-top: 40px;
-            color: red;
-        }
-    }
+    width: 100%;
 
-}
-
-.container-stickers {
-
-    .row-stickers {
-        .descripcion {
-            @include contenedor-texto(auto, 30px 0, 10px 30px, 6px, 1px 2px 2px grey);
-            background-color: $bg-color-card;
-
-            p {
-                text-align: justify;
-
-            }
-        }
-    }
-}
-
-.container-stickers {
-
-    .container-row {
-        margin-bottom: 100px;
-        padding: 0 100px;
+    .row-protectores {
+        margin-bottom: 50px;
+        padding: 20px 20px;
 
         .producto {
             background-color: $bg-color-card;
+            
             padding: 15px;
-            margin: 30px;
+            margin: 10px;
+            width: 100%;
             border-radius: $border-radius-tb;
             box-shadow: $box-shadow-card;
             @extend %dflex;
             flex-direction: column;
-
 
             &:hover {
                 box-shadow: $box-shadow-hover;
@@ -53,8 +27,9 @@
                 border-radius: 5px; 
 
                 &:hover {
-                    transform: rotateY(360deg);
-                    transition: all 2s;
+                    transform: rotatez(360deg);
+                    transition: all 0.5s;
+                    border-radius: 150px;
                 }
                 
             }
@@ -64,6 +39,14 @@
                 font-size: 20px;
                 margin: 10px;
                 text-align: center;
+
+                
+                @media screen and (max-width: 576px) {
+                    font-size: 18px;
+                 }
+ 
+
+
             }
 
             p {
@@ -92,16 +75,39 @@
 
             }
 
-            @media screen and (max-width: 576px) {
-                padding: 15px;
-                margin: 10px;
-            }
-
         }
 
         @media screen and (max-width: 576px) {
             margin: 0 0 80px 0;
             padding: 0;
         }
+
+
     }
 }
+
+.container-descripcion {
+    background-color: rgba(181, 247, 236, 0.384);
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding: 20px 20px 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px darkgray;
+    margin-bottom: 150px;
+
+    .row-descripcion {
+
+        h4 {
+            margin: 20px 0;
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: justify;
+            margin: 10px 0; 
+        }
+    }
+}
+
+
