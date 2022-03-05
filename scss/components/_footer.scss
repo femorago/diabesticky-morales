@@ -11,13 +11,14 @@
 
     .footer {
 
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .contenedor-menu-footer {
             height: auto;
+            margin: 10px;
 
             .menu-footer {
 
@@ -34,9 +35,15 @@
     
                         }
                     }
+
+                    @media screen and (max-width: 576px) {
+                        padding-left: 0;
+                    }
+
                 }
 
             }
+
         }
 
         .redes-footer {
@@ -74,38 +81,65 @@
     }
 
     .medios {
+        margin: 0 50px 60px 0;
 
         .texto-medios {
             display: flex;
             flex-direction: column;
+            
+            h4 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
         }
+
+        @media screen and (max-width: 576px) {
+            margin: 0 10px 60px 0;
+        }
+
     }
 
 
     .desarrollo {
-
         font-size: 12px;
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 6px;
+        
 
         .textos-desarrollo {
 
-            width: 90%;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
+            
 
-            .text1 {
-                color: white;
-                display: flex;
-                align-items: flex-end;
+            .texto1 {
+                p {
+                    color: white;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 0;
+                }
             }
 
             .texto2 {
-                color: white;
-                display: flex;
-                align-items: flex-end;
+                p {
+                    color: white;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 0;
+                }
+
+            }
+
+            @media screen and (max-width: 576px) {
+                    width: 100%;
             }
         }
     }

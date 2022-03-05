@@ -5,6 +5,13 @@
     z-index: 1;
     background-color: rgb(211, 206, 206);
 
+    @media screen and (max-width: 576px) {
+		* {
+            top: 0;
+        }
+	}
+    
+
     .logo-menu {
 
         img {
@@ -12,7 +19,7 @@
 
             @media screen and (max-width: 576px) {
                 display: block;
-                width: 60%;
+                width: 50%;
             }
         }
 

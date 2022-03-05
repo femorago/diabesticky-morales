@@ -9,7 +9,7 @@
 }
 
 .contenedor-nosotros {
-    margin: 50px auto;
+    margin: 35px auto;
     padding-bottom: 50px;
 
     .marco-nosotros {
@@ -33,6 +33,11 @@
         .texto-nosotros {
             padding: 20px;
             text-align: justify;
+
+            @media screen and (max-width: 576px) {
+                padding: 0;
+                margin: 20px 0;
+            }
         }
 
     }

@@ -56,6 +56,10 @@
                     transition: all 1s;
                 }
             }
+
+            @media screen and (max-width: 576px) {
+                width: 90%;
+            }
         }
     }
 }
