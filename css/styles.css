@@ -1,5 +1,5 @@
 .header-container {
-  padding: 5px 0 0;
+  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -236,7 +236,7 @@
 }
 @media screen and (max-width: 576px) {
   .ubicacion .direccion {
-    margin: 10px auto 100px;
+    margin: 10px auto 70px;
     font-size: 16px;
   }
 }
