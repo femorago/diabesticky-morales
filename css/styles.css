@@ -57,6 +57,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 576px) {
+  .header-container {
+    padding: 0;
+  }
+}
 
 .nav-diabesticky {
   position: sticky;
@@ -65,13 +70,18 @@
   z-index: 1;
   background-color: #d3cece;
 }
+@media screen and (max-width: 576px) {
+  .nav-diabesticky * {
+    top: 0;
+  }
+}
 .nav-diabesticky .logo-menu img {
   display: none;
 }
 @media screen and (max-width: 576px) {
   .nav-diabesticky .logo-menu img {
     display: block;
-    width: 60%;
+    width: 50%;
   }
 }
 .nav-diabesticky .li-nav {
@@ -138,6 +148,11 @@
   padding: 2px 12px;
   transition: all 1s;
 }
+@media screen and (max-width: 576px) {
+  .container-productos .row-productos .marco {
+    width: 90%;
+  }
+}
 
 .contenedor-envios {
   width: 100%;
@@ -153,12 +168,21 @@
   text-align: center;
   margin: 80px 0 50px 0;
 }
+@media screen and (max-width: 576px) {
+  .contenedor-envios .envios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 80px 0;
+  }
+}
 .contenedor-envios .envios img {
   width: 60px;
+  margin: 0 0 10px 0;
 }
 .contenedor-envios .envios h3 {
   text-align: center;
-  margin-left: 30px;
   color: red;
   text-transform: uppercase;
   border-top: 1px solid black;
@@ -179,7 +203,9 @@
 }
 @media screen and (max-width: 576px) {
   .ubicacion {
-    margin-bottom: 80px;
+    margin: auto;
+    flex-direction: column;
+    width: 90%;
   }
 }
 .ubicacion .plano {
@@ -198,9 +224,20 @@
   margin-top: 150px;
   margin-right: 100px;
 }
+.ubicacion .direccion p {
+  margin: 2px;
+}
 @media screen and (max-width: 576px) {
   .ubicacion .direccion {
-    margin-left: 20px;
+    width: 100%;
+    margin: 10px 10px 100px 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ubicacion .direccion {
+    margin: 10px auto 100px;
+    font-size: 16px;
   }
 }
 
@@ -214,13 +251,14 @@
   flex-wrap: wrap;
 }
 .footer-container .footer {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .footer-container .footer .contenedor-menu-footer {
   height: auto;
+  margin: 10px;
 }
 .footer-container .footer .contenedor-menu-footer .menu-footer {
   margin-top: 20px;
@@ -234,6 +272,11 @@
   color: white;
   text-decoration: none;
   margin: 15px 0;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .footer .contenedor-menu-footer .menu-footer ul {
+    padding-left: 0;
+  }
 }
 .footer-container .footer .redes-footer {
   display: none;
@@ -251,31 +294,53 @@
   margin-left: 8px;
   margin-right: 10px;
 }
+.footer-container .medios {
+  margin: 0 50px 60px 0;
+}
 .footer-container .medios .texto-medios {
   display: flex;
   flex-direction: column;
+}
+.footer-container .medios .texto-medios h4 {
+  margin: 0;
+}
+.footer-container .medios .texto-medios p {
+  margin: 0;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .medios {
+    margin: 0 10px 60px 0;
+  }
 }
 .footer-container .desarrollo {
   font-size: 12px;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 6px;
 }
 .footer-container .desarrollo .textos-desarrollo {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.footer-container .desarrollo .textos-desarrollo .text1 {
+.footer-container .desarrollo .textos-desarrollo .texto1 p {
   color: white;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 0;
 }
-.footer-container .desarrollo .textos-desarrollo .texto2 {
+.footer-container .desarrollo .textos-desarrollo .texto2 p {
   color: white;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .desarrollo .textos-desarrollo {
+    width: 100%;
+  }
 }
 
 .titulo-nosotros h1 {
@@ -285,7 +350,7 @@
 }
 
 .contenedor-nosotros {
-  margin: 50px auto;
+  margin: 35px auto;
   padding-bottom: 50px;
 }
 .contenedor-nosotros .marco-nosotros {
@@ -308,6 +373,12 @@
 .contenedor-nosotros .marco-nosotros .texto-nosotros {
   padding: 20px;
   text-align: justify;
+}
+@media screen and (max-width: 576px) {
+  .contenedor-nosotros .marco-nosotros .texto-nosotros {
+    padding: 0;
+    margin: 20px 0;
+  }
 }
 
 .container-protectores .row-protectores .producto, .container-stickers .container-row .producto {
@@ -333,6 +404,12 @@
 }
 .container-stickers .row-stickers .descripcion p {
   text-align: justify;
+}
+@media screen and (max-width: 576px) {
+  .container-stickers .row-stickers .descripcion {
+    width: 95%;
+    margin: 20px auto 50px;
+  }
 }
 
 .container-stickers .container-row {
@@ -399,7 +476,14 @@
 }
 
 .contenedor-fila .foto-protector {
-  margin-top: 50px;
+  margin: 50px auto 0;
+  padding: 0 10px;
+}
+@media screen and (max-width: 576px) {
+  .contenedor-fila .foto-protector {
+    margin: 35px auto 0;
+    padding: 0 10px;
+  }
 }
 .contenedor-fila .detalle-flex {
   margin-top: 50px;
@@ -429,8 +513,13 @@
 .contenedor-fila .detalle-flex .variantes h4 {
   text-align: left;
 }
+@media screen and (max-width: 576px) {
+  .contenedor-fila .detalle-flex .variantes {
+    width: 90%;
+    margin: 0 0 30px 10px;
+  }
+}
 .contenedor-fila .detalle-flex a {
-  margin-left: 10px;
   text-decoration: none;
   color: red;
   background-color: rgba(255, 0, 0, 0.123);
@@ -446,6 +535,18 @@
   border-radius: 20px;
   padding: 4px 12px;
   transition: all 0.5s;
+}
+@media screen and (max-width: 576px) {
+  .contenedor-fila .detalle-flex a {
+    width: 100%;
+    margin: 50px 0 0 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor-fila .detalle-flex {
+    width: 90%;
+    margin: 50px 0 0 0;
+  }
 }
 
 .description {
@@ -470,7 +571,8 @@
 }
 @media screen and (max-width: 576px) {
   .description {
-    margin: 50px 0;
+    margin: 40px auto;
+    width: 90%;
   }
 }
 
@@ -586,6 +688,9 @@
   margin-bottom: 50px;
   padding: 20px 20px;
 }
+.container-protectores .row-protectores .protector-card {
+  display: flex;
+}
 .container-protectores .row-protectores .producto {
   background-color: rgba(181, 247, 236, 0.5);
   padding: 15px;
@@ -619,9 +724,10 @@
   }
 }
 .container-protectores .row-protectores .producto p {
-  margin: 0 auto;
-  width: 30%;
+  margin: auto;
+  width: 100%;
   font-size: 30px;
+  text-align: center;
 }
 .container-protectores .row-protectores .producto a {
   text-decoration: none;
@@ -664,7 +770,17 @@
   text-align: justify;
   margin: 10px 0;
 }
+@media screen and (max-width: 576px) {
+  .container-descripcion {
+    width: 82%;
+    margin-bottom: 60px;
+  }
+}
 
 /* Valores para los cuadros de textos descriptivos */
+/*Publicidad Hosting*/
+.disclaimer {
+  display: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
