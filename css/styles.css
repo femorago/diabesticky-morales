@@ -244,13 +244,13 @@
 .footer-container {
   color: #FFF;
   width: 100%;
-  height: 220px;
   background-color: black;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .footer-container .footer {
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -272,52 +272,108 @@
   color: white;
   text-decoration: none;
   margin: 15px 0;
+  font-size: 20px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .footer .contenedor-menu-footer .menu-footer ul li a {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footer-container .footer .contenedor-menu-footer .menu-footer ul {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 576px) {
+  .footer-container .footer .contenedor-menu-footer {
+    margin: 6px 0 10px 20px;
+  }
+}
 .footer-container .footer .redes-footer {
   display: none;
 }
-.footer-container .footer .redes-footer .redes a img .ig-footer {
-  width: 35px;
-  margin: 0 10px;
-}
-.footer-container .footer .redes-footer .redes a img .wp-footer {
-  width: 35px;
-  margin: 0 10px;
-}
-.footer-container .footer .redes-footer .redes a img .email-footer {
-  width: 45px;
-  margin-left: 8px;
-  margin-right: 10px;
-}
 .footer-container .medios {
-  margin: 0 50px 60px 0;
+  margin: 20px 50px 40px 0;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer-container .medios .texto-medios {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
 }
-.footer-container .medios .texto-medios h4 {
+.footer-container .medios .texto-medios h5 {
+  width: 100%;
+  margin: 0 0 0 8px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .medios .texto-medios h5 {
+    width: 100%;
+    margin: 0 0 5px 4px;
+    font-size: 16px;
+  }
+}
+.footer-container .medios .texto-medios .tarjetas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-container .medios .texto-medios .tarjetas img {
+  height: 25px;
+  margin: 5px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .medios .texto-medios .tarjetas img {
+    height: 15px;
+    margin: 2px;
+  }
+}
+.footer-container .medios .texto-medios .tarjetas p {
   margin: 0;
 }
-.footer-container .medios .texto-medios p {
-  margin: 0;
+.footer-container .medios .texto-medios h5 {
+  width: 100%;
+  margin: 10px 0 0 8px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .medios .texto-medios h5 {
+    width: 100%;
+    margin: 5px 0 5px 4px;
+    font-size: 16px;
+  }
+}
+.footer-container .medios .texto-medios .mercado-envios {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-container .medios .texto-medios .mercado-envios img {
+  height: 25px;
+  margin: 5px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .medios .texto-medios .mercado-envios img {
+    height: 15px;
+    margin: 2px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footer-container .medios {
-    margin: 0 10px 60px 0;
+    width: 50%;
+    margin: 5px;
+    padding: 0 0 35px 0;
   }
 }
 .footer-container .desarrollo {
-  font-size: 12px;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 6px;
+  align-items: center;
 }
 .footer-container .desarrollo .textos-desarrollo {
   width: 100%;
@@ -330,12 +386,24 @@
   display: flex;
   align-items: flex-end;
   margin-bottom: 0;
+  font-size: 14px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .desarrollo .textos-desarrollo .texto1 p {
+    font-size: 12px;
+  }
 }
 .footer-container .desarrollo .textos-desarrollo .texto2 p {
   color: white;
   display: flex;
   align-items: flex-end;
   margin-bottom: 0;
+  font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+  .footer-container .desarrollo .textos-desarrollo .texto2 p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 576px) {
   .footer-container .desarrollo .textos-desarrollo {
@@ -350,8 +418,8 @@
 }
 
 .contenedor-nosotros {
-  margin: 35px auto;
-  padding-bottom: 50px;
+  margin: 50px auto;
+  padding-bottom: 300px;
 }
 .contenedor-nosotros .marco-nosotros {
   width: 90%;
@@ -378,6 +446,12 @@
   .contenedor-nosotros .marco-nosotros .texto-nosotros {
     padding: 0;
     margin: 20px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor-nosotros {
+    margin: 35px auto;
+    padding-bottom: 50px;
   }
 }
 
@@ -586,7 +660,13 @@
 .contenedor-form h1 {
   color: red;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 576px) {
+  .contenedor-form h1 {
+    margin-top: 30px;
+    font-size: 25px;
+  }
 }
 .contenedor-form p {
   padding: 30px;
@@ -601,7 +681,7 @@
 .contenedor-form .form {
   width: 40%;
   height: 600px;
-  margin: 20px auto 60px;
+  margin: 20px auto 200px;
   padding-top: 30px;
   border: 2px dashed black;
   border-radius: 10px;

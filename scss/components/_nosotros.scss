@@ -9,8 +9,8 @@
 }
 
 .contenedor-nosotros {
-    margin: 35px auto;
-    padding-bottom: 50px;
+    margin: 50px auto;
+    padding-bottom: 300px;
 
     .marco-nosotros {
         width: 90%;
@@ -40,5 +40,10 @@
             }
         }
 
+    }
+
+    @media screen and (max-width: 576px) {
+        margin: 35px auto;
+        padding-bottom: 50px;
     }
 }
