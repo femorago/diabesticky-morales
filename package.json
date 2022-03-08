@@ -1,19 +1,19 @@
 {
-  "name": "diabesticky-federico-morales",
+  "name": "diabesticky",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">Hi 👋, I'm Federico Morales</h1>\r <h3 align=\"center\">A passionate frontend developer from Argentina and Uruguay</h3>",
+  "description": "Diabesticky es una tienda online de accesorios para diabetes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/femorago/diabesticky-federico-morales.git"
+    "url": "git+https://github.com/femorago/diabesticky-morales.git"
   },
-  "author": "",
+  "author": "Federico Morales Gonzalez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/femorago/diabesticky-federico-morales/issues"
+    "url": "https://github.com/femorago/diabesticky-morales/issues"
   },
-  "homepage": "https://github.com/femorago/diabesticky-federico-morales#readme"
+  "homepage": "https://github.com/femorago/diabesticky-morales#readme"
 }
