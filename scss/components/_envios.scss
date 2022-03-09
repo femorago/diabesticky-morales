@@ -1,3 +1,132 @@
+.banner {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+
+    @media screen and (max-width: 576px) {
+        flex-wrap: wrap;
+        margin: 10px auto;
+
+    }
+
+
+    .tarjeta {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 3px gray;
+        border-radius: 6px;
+        margin: 10px auto;
+
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+
+        i {
+            width: 15%;
+            margin: 10px;
+            font-size: 35px;
+            color: red;
+            background-color: transparent;
+        }
+
+        .texto-tarjeta {
+            font-size: 18px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            text-align: left;
+
+            h6 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: red;
+                font-size: 20px;
+                margin: 0;
+                display: flex;
+                justify-content: flex-start;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 18px;
+                }
+            
+            }
+
+            p {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+    }
+
+    .seguridad {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px 1px 3px gray;
+        border-radius: 6px;
+        margin: 10px auto;
+
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+        
+        i {
+            width: 15%;
+            margin: 10px;
+            font-size: 35px;
+            color: red;
+            background-color: transparent
+
+        }
+
+        .texto-seguridad {
+            font-size: 18px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            text-align: left;
+
+            h6 {
+                font-family: Arial, Helvetica, sans-serif;
+                color: red;
+                font-size: 20px;
+                margin: 0;
+                display: flex;
+                justify-content: flex-start;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 18px;
+                }
+            
+            }
+
+            p {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
 .contenedor-envios {
     width: 100%;
     margin-top: 30px;
@@ -11,7 +140,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin: 80px 0 50px 0;
+        margin: 50px 0;
 
         @media screen and (max-width: 576px) {
             display: flex;
@@ -23,14 +152,13 @@
 
         img {
             width: 60px;
-            margin: 0 0 10px 0;
+            margin: 0 20px 10px 0;
         }
 
         h3 {
             
             text-align: center;
       
-            color: red;
             text-transform: uppercase;
             border-top: 1px solid black;
             border-bottom: 1px solid black;
