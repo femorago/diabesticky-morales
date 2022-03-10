@@ -10,7 +10,6 @@
 }
 .header-container .header .logo {
   padding: 10px;
-  width: 10%;
 }
 .header-container .header .logo .logo-size {
   display: flex;
@@ -102,17 +101,6 @@
   width: 100%;
 }
 
-h1 {
-  text-align: center;
-  color: red;
-  margin: 50px 0 50px 0;
-  padding: 20px 0;
-  font-family: "Roboto";
-  font-size: 3em;
-  font-weight: bold;
-  text-shadow: 1px 2px 4px #c2bdbd;
-}
-
 .container-productos .row-productos .marco {
   background-color: rgba(181, 247, 236, 0.5);
   width: 80%;
@@ -135,10 +123,6 @@ h1 {
 }
 .container-productos .row-productos .marco h4 {
   text-align: center;
-  font-family: "Roboto";
-  font-size: 20px;
-  padding: 10px 0 0 0;
-  text-transform: uppercase;
 }
 .container-productos .row-productos .marco p {
   color: black;
@@ -170,122 +154,6 @@ h1 {
   }
 }
 
-.banner {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto;
-}
-@media screen and (max-width: 576px) {
-  .banner {
-    flex-wrap: wrap;
-    margin: 10px auto;
-  }
-}
-.banner .tarjeta {
-  width: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 3px gray;
-  border-radius: 6px;
-  margin: 10px auto;
-}
-@media screen and (max-width: 576px) {
-  .banner .tarjeta {
-    width: 100%;
-  }
-}
-.banner .tarjeta i {
-  width: 15%;
-  margin: 10px;
-  font-size: 35px;
-  color: red;
-  background-color: transparent;
-}
-.banner .tarjeta .texto-tarjeta {
-  font-size: 18px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: left;
-}
-.banner .tarjeta .texto-tarjeta h6 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: red;
-  font-size: 20px;
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
-}
-@media screen and (max-width: 576px) {
-  .banner .tarjeta .texto-tarjeta h6 {
-    font-size: 18px;
-  }
-}
-.banner .tarjeta .texto-tarjeta p {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-@media screen and (max-width: 576px) {
-  .banner .tarjeta .texto-tarjeta p {
-    font-size: 14px;
-  }
-}
-.banner .seguridad {
-  width: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 3px gray;
-  border-radius: 6px;
-  margin: 10px auto;
-}
-@media screen and (max-width: 576px) {
-  .banner .seguridad {
-    width: 100%;
-  }
-}
-.banner .seguridad i {
-  width: 15%;
-  margin: 10px;
-  font-size: 35px;
-  color: red;
-  background-color: transparent;
-}
-.banner .seguridad .texto-seguridad {
-  font-size: 18px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: left;
-}
-.banner .seguridad .texto-seguridad h6 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: red;
-  font-size: 20px;
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
-}
-@media screen and (max-width: 576px) {
-  .banner .seguridad .texto-seguridad h6 {
-    font-size: 18px;
-  }
-}
-.banner .seguridad .texto-seguridad p {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-@media screen and (max-width: 576px) {
-  .banner .seguridad .texto-seguridad p {
-    font-size: 14px;
-  }
-}
-
 .contenedor-envios {
   width: 100%;
   margin-top: 30px;
@@ -298,7 +166,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 50px 0;
+  margin: 80px 0 50px 0;
 }
 @media screen and (max-width: 576px) {
   .contenedor-envios .envios {
@@ -311,10 +179,11 @@ h1 {
 }
 .contenedor-envios .envios img {
   width: 60px;
-  margin: 0 20px 10px 0;
+  margin: 0 0 10px 0;
 }
 .contenedor-envios .envios h3 {
   text-align: center;
+  color: red;
   text-transform: uppercase;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -549,13 +418,8 @@ h1 {
 
 .titulo-nosotros h1 {
   text-align: center;
+  margin-top: 40px;
   color: red;
-  margin: 50px 0 50px 0;
-  padding: 20px 0;
-  font-family: "Roboto";
-  font-size: 3em;
-  font-weight: bold;
-  text-shadow: 1px 2px 4px #c2bdbd;
 }
 
 .contenedor-nosotros {
@@ -815,7 +679,7 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   .contenedor-form p {
-    padding: 0;
+    padding: 30px;
     text-align: justify;
   }
 }
