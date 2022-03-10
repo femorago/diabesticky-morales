@@ -107,9 +107,10 @@ h1 {
   color: red;
   margin: 50px 0 50px 0;
   padding: 20px 0;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 4em;
+  font-family: "Roboto";
+  font-size: 3em;
   font-weight: bold;
+  text-shadow: 1px 2px 4px #c2bdbd;
 }
 
 .container-productos .row-productos .marco {
@@ -548,8 +549,13 @@ h1 {
 
 .titulo-nosotros h1 {
   text-align: center;
-  margin-top: 40px;
   color: red;
+  margin: 50px 0 50px 0;
+  padding: 20px 0;
+  font-family: "Roboto";
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #c2bdbd;
 }
 
 .contenedor-nosotros {
