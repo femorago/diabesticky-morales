@@ -118,47 +118,58 @@ h1 {
 }
 
 .container-productos .row-productos .marco {
-  background-color: rgba(181, 247, 236, 0.5);
+  background-color: #FFF;
   width: 80%;
+  border: 1px solid grey;
   border-radius: 0 0 5px 5px;
   margin: auto;
-  padding: 15px;
+  padding-bottom: 5px;
   box-shadow: 1px 2px 2px grey;
   text-align: center;
 }
 .container-productos .row-productos .marco:hover {
   box-shadow: 2px 2px 10px grey;
 }
-.container-productos .row-productos .marco img {
-  width: 100%;
-  border-radius: 5px;
+.container-productos .row-productos .marco a {
+  text-decoration: none;
+  color: black;
 }
-.container-productos .row-productos .marco img:hover {
-  transform: scale(1.1);
+.container-productos .row-productos .marco a img {
+  width: 100%;
+}
+.container-productos .row-productos .marco a img:hover {
+  transform: scale(0.95);
   transition: all 1s;
 }
-.container-productos .row-productos .marco h4 {
-  text-align: center;
+.container-productos .row-productos .marco a h4 {
+  text-align: left;
   font-family: "Roboto";
-  font-size: 20px;
-  padding: 10px 0 0 0;
-  text-transform: uppercase;
+  font-size: 16px;
+  padding: 6px 0 0 0;
+  margin: 5px 0 0 10px;
 }
-.container-productos .row-productos .marco p {
-  color: black;
-  margin: 10px auto;
+@media screen and (max-width: 576px) {
+  .container-productos .row-productos .marco a h4 {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 15px;
+  }
+}
+.container-productos .row-productos .marco a p {
+  margin: 5px auto;
   width: 30%;
   font-size: 25px;
-  text-align: center;
+  font-family: "Roboto";
+  text-align: left;
 }
-.container-productos .row-productos .marco .boton-comprar {
+.container-productos .row-productos .marco a .boton-comprar {
   text-decoration: none;
   color: red;
   border: 1px solid red;
   border-radius: 20px;
   padding: 2px 12px;
 }
-.container-productos .row-productos .marco .boton-comprar:hover {
+.container-productos .row-productos .marco a .boton-comprar:hover {
   text-decoration: none;
   color: #FFF;
   background-color: red;
@@ -169,7 +180,7 @@ h1 {
   transition: all 1s;
 }
 @media screen and (max-width: 576px) {
-  .container-productos .row-productos .marco {
+  .container-productos .row-productos .marco a {
     width: 90%;
   }
 }
@@ -189,6 +200,7 @@ h1 {
 }
 .banner .tarjeta {
   width: 35%;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,6 +252,7 @@ h1 {
 }
 .banner .seguridad {
   width: 35%;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,6 +446,12 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .footer-container .footer .social {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .footer-container .footer .social .redes-sociales {
   text-align: center;
 }
@@ -452,7 +471,7 @@ h1 {
 @media screen and (max-width: 576px) {
   .footer-container .footer .social .redes-sociales a i {
     font-size: 15px;
-    margin: 5px;
+    margin: 2px;
   }
 }
 .footer-container .medios {
@@ -1027,6 +1046,15 @@ h1 {
 
 /* Valores para los cuadros de textos descriptivos */
 /*Publicidad Hosting*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fffcf9;
+}
+
 .disclaimer {
   display: none;
 }
