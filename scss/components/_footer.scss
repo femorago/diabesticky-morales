@@ -23,7 +23,7 @@
 
             .menu-footer {
 
-                margin-top: 20px;
+                
                 height: auto;
                 ul {
                     li {
@@ -64,14 +64,44 @@
 
         }
 
-        .redes-footer {
-            display: none;
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .redes-sociales {
+                text-align: center;
+
+                h4 {
+                    @media screen and (max-width: 576px) {
+                        display: none;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    
+                    i {
+                        color: #FFF;
+                        font-size: 30px;
+                        margin: 10px;
+
+                        @media screen and (max-width: 576px) {
+                        
+                            font-size: 15px;
+                            margin: 5px;
+                        }
+                    }
+
+                }
+            }
+        
         }
         
     }
 
     .medios {
-        margin: 20px 50px 40px 0;
+        margin: 20px 0;
         width: 15%;
         display: flex;
         justify-content: space-between;
@@ -84,9 +114,11 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
+     
+
             h5 {
                 width: 100%;
-                margin: 0 0 0 8px;
+                margin: 0;
 
                 @media screen and (max-width: 576px) {
                     width: 100%;
@@ -120,7 +152,7 @@
 
             h5 {
                 width: 100%;
-                margin: 10px 0 0 8px;
+                margin: 10px 0;
 
                 @media screen and (max-width: 576px) {
                     width: 100%;
