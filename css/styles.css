@@ -109,7 +109,7 @@
 h1 {
   text-align: center;
   color: red;
-  margin: 50px 0 50px 0;
+  margin: 20px 0;
   padding: 20px 0;
   font-family: "Roboto";
   font-size: 3em;
@@ -596,29 +596,37 @@ h1 {
 .titulo-nosotros h1 {
   text-align: center;
   color: red;
-  margin: 50px 0 50px 0;
+  margin: 30px 0;
   padding: 20px 0;
   font-family: "Roboto";
   font-size: 3em;
   font-weight: bold;
   text-shadow: 1px 2px 4px #c2bdbd;
 }
+@media screen and (max-width: 576px) {
+  .titulo-nosotros h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+}
 
 .contenedor-nosotros {
   margin: 50px auto;
-  padding-bottom: 300px;
+  padding-bottom: 150px;
 }
 .contenedor-nosotros .marco-nosotros {
   width: 90%;
-  background-color: rgba(181, 247, 236, 0.5);
-  padding: 20px;
+  background-color: white;
+  padding: 40px;
   margin: auto;
   border-radius: 6px;
-  box-shadow: 1px 2px 2px grey;
+  box-shadow: 1px 2px 6px grey;
 }
 .contenedor-nosotros .marco-nosotros img {
   width: 100%;
   border-radius: 5px;
+  border: 1px solid #838080;
+  box-shadow: 1px 2px 6px grey;
 }
 .contenedor-nosotros .marco-nosotros img:hover {
   transform: rotate(2deg);
@@ -626,7 +634,7 @@ h1 {
   box-shadow: 2px 2px 10px grey;
 }
 .contenedor-nosotros .marco-nosotros .texto-nosotros {
-  padding: 20px;
+  padding: 0 20px;
   text-align: justify;
 }
 @media screen and (max-width: 576px) {
@@ -642,7 +650,7 @@ h1 {
   }
 }
 
-.container-protectores .row-protectores .producto, .container-stickers .container-row .producto {
+.container-protectores .row-protectores .producto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -651,17 +659,17 @@ h1 {
 /* Valores para los cuadros de textos descriptivos */
 .section-encabezado .encabezado h1 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   color: red;
 }
 
 .container-stickers .row-stickers .descripcion {
   height: auto;
-  margin: 30px 0;
+  margin: 10px 0;
   padding: 10px 30px;
   border-radius: 6px;
   box-shadow: 1px 2px 2px grey;
-  background-color: rgba(181, 247, 236, 0.5);
+  background-color: #FFF;
 }
 .container-stickers .row-stickers .descripcion p {
   text-align: justify;
@@ -674,38 +682,47 @@ h1 {
 }
 
 .container-stickers .container-row {
-  margin-bottom: 100px;
+  margin: 50px 0 100px 0;
   padding: 0 100px;
 }
 .container-stickers .container-row .producto {
-  background-color: rgba(181, 247, 236, 0.5);
-  padding: 15px;
-  margin: 30px;
+  background-color: #FFF;
+  width: 80%;
+  border: 1px solid grey;
   border-radius: 0 0 5px 5px;
+  margin: auto;
+  padding-bottom: 20px;
   box-shadow: 1px 2px 2px grey;
-  flex-direction: column;
+  text-align: center;
 }
 .container-stickers .container-row .producto:hover {
   box-shadow: 2px 2px 10px grey;
+  transform: scale(1.05);
+  transition: all 1S;
 }
 .container-stickers .container-row .producto img {
   width: 100%;
-  border-radius: 5px;
 }
-.container-stickers .container-row .producto img:hover {
-  transform: rotateY(360deg);
-  transition: all 2s;
+.container-stickers .container-row .producto h4 {
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 6px 0 0 0;
+  margin: 5px 0 0 10px;
 }
-.container-stickers .container-row .producto h3 {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  margin: 10px;
-  text-align: center;
+@media screen and (max-width: 576px) {
+  .container-stickers .container-row .producto h4 {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 15px;
+  }
 }
 .container-stickers .container-row .producto p {
-  margin: 0 auto;
+  margin: 5px auto;
   width: 30%;
-  font-size: 30px;
+  font-size: 25px;
+  font-family: "Roboto";
+  text-align: left;
 }
 .container-stickers .container-row .producto a {
   text-decoration: none;
@@ -811,7 +828,7 @@ h1 {
 }
 
 .description {
-  background-color: rgba(181, 247, 236, 0.5);
+  background-color: #FFF;
   border-radius: 5px;
   box-shadow: 1px 2px 2px grey;
   margin-bottom: 100px;
@@ -942,7 +959,7 @@ h1 {
   }
 }
 
-.container-protectores .row-protectores .producto, .container-stickers .container-row .producto {
+.container-protectores .row-protectores .producto {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -959,7 +976,7 @@ h1 {
   display: flex;
 }
 .container-protectores .row-protectores .producto {
-  background-color: rgba(181, 247, 236, 0.5);
+  background-color: #FFF;
   padding: 15px;
   margin: 10px;
   width: 100%;
