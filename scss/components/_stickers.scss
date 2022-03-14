@@ -1,12 +1,13 @@
 @import "../base/extends";
 @import "../base/mixins";
+@import "../base/variables";
 
 .section-encabezado {
     .encabezado {
 
         h1 {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 20px;
             color: red;
         }
     }
@@ -17,7 +18,7 @@
 
     .row-stickers {
         .descripcion {
-            @include contenedor-texto(auto, 30px 0, 10px 30px, 6px, 1px 2px 2px grey);
+            @include contenedor-texto(auto, 10px 0, 10px 30px, 6px, 1px 2px 2px grey);
             background-color: $bg-color-card;
 
             p {
@@ -36,18 +37,19 @@
 .container-stickers {
 
     .container-row {
-        margin-bottom: 100px;
+        margin: 50px 0 100px 0;
         padding: 0 100px;
 
         .producto {
-            background-color: $bg-color-card;
-            padding: 15px;
-            margin: 30px;
+            background-color: #FFF;
+            width: 80%;
+            border: 1px solid grey;
             border-radius: $border-radius-tb;
-            box-shadow: $box-shadow-card;
-            @extend %dflex;
-            flex-direction: column;
-
+            margin: auto;
+ 
+            padding-bottom: 20px;
+            box-shadow: map-get($cards-productos, sombra-cards);
+            text-align: center;
 
             &:hover {
                 box-shadow: $box-shadow-hover;
@@ -55,7 +57,6 @@
 
             img {
                 width: 100%;
-                border-radius: 5px; 
 
                 &:hover {
                     transform: rotateY(360deg);
@@ -64,18 +65,26 @@
                 
             }
 
-            h3 {
-                font-family: 'Poppins', sans-serif;
-                font-size: 20px;
-                margin: 10px;
-                text-align: center;
+            h4 {
+                text-align: left;
+                font-family: "Roboto";             
+                font-size: 16px;
+                padding: 6px 0 0 0;
+                margin: 5px 0 0 10px;
+
+                @media screen and (max-width: 576px) {
+                    text-align: left;
+                    font-size: 20px;;
+                    margin-left: 15px;
+                }
             }
 
             p {
-                margin: 0 auto;
+                margin: 5px auto;
                 width: 30%;
-                font-size: 30px;
-
+                font-size: 25px;
+                font-family: "Roboto"; 
+                text-align: left;
             }
 
             a {
