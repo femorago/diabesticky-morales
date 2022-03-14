@@ -697,13 +697,11 @@ h1 {
 }
 .container-stickers .container-row .producto:hover {
   box-shadow: 2px 2px 10px grey;
+  transform: scale(1.05);
+  transition: all 1S;
 }
 .container-stickers .container-row .producto img {
   width: 100%;
-}
-.container-stickers .container-row .producto img:hover {
-  transform: rotateY(360deg);
-  transition: all 2s;
 }
 .container-stickers .container-row .producto h4 {
   text-align: left;

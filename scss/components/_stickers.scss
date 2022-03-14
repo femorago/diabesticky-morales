@@ -53,15 +53,17 @@
 
             &:hover {
                 box-shadow: $box-shadow-hover;
+                transform: scale(1.05);
+                transition: all 1S;
             }
 
             img {
                 width: 100%;
 
-                &:hover {
-                    transform: rotateY(360deg);
-                    transition: all 2s;
-                }
+                // &:hover {
+                //     transform: rotateY(360deg);
+                //     transition: all 2s;
+                // }
                 
             }
 
