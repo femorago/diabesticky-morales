@@ -15,9 +15,10 @@
         .producto {
             background-color: $bg-color-card;
             
-            padding: 15px;
+            padding-bottom: 20px;
             margin: 10px;
             width: 100%;
+            border: 1px solid grey;
             border-radius: $border-radius-tb;
             box-shadow: $box-shadow-card;
             @extend %dflex;
@@ -25,11 +26,13 @@
 
             &:hover {
                 box-shadow: $box-shadow-hover;
+                transform: scale(1.05);
+                transition: all 1S;
+            
             }
 
             img {
                 width: 100%;
-                border-radius: 5px; 
 
                 &:hover {
                     transform: rotatez(360deg);
@@ -40,7 +43,7 @@
             }
 
             h3 {
-                font-family: 'Poppins', sans-serif;
+                font-family: "Roboto";
                 font-size: 20px;
                 margin: 10px;
                 text-align: center;
@@ -58,6 +61,7 @@
                 margin: auto;
                 width: 100%;
                 font-size: 30px;
+                font-family: "Roboto";
                 text-align: center;
 
             }
@@ -93,11 +97,11 @@
 }
 
 .container-descripcion {
-    background-color: rgba(181, 247, 236, 0.384);
-    width: 100%;
+    background-color: #FFF;
+    width: 85%;
     margin: auto;
     height: auto;
-    padding: 20px 20px 50px;
+    padding: 30px 30px 50px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px darkgray;
     margin-bottom: 150px;
@@ -105,11 +109,13 @@
     .row-descripcion {
 
         h4 {
+            font-family: "Roboto";
             margin: 20px 0;
             text-decoration: underline;
         }
 
         p {
+            font-family: "Roboto";
             text-align: justify;
             margin: 10px 0; 
         }
