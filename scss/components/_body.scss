@@ -7,6 +7,30 @@
 
 body {
     background-color: rgb(255, 252, 249);
+
+    .btn-whatsapp {
+        display:block;
+        width:70px;
+        height:70px;
+        color: #fff;
+        position: fixed;
+        right:20px;
+        bottom:20px;
+        border-radius:50%;
+        line-height:80px;
+        text-align:center;
+        z-index:999;
+    }
+
+    .boton-wp {
+        img {
+            width: 80%;
+
+            @media screen and (max-width: 576px) {
+                width: 60%;
+            }
+        }
+    }
 }
 
 .disclaimer {

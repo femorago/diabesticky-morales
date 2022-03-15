@@ -1,11 +1,12 @@
 .contenedor-fila {
+
     .foto-protector {
         margin: 50px auto 0;
-        padding: 0 10px;
+        border-radius: 8px;
 
         @media screen and (max-width: 576px) {
             margin: 35px auto 0;
-            padding: 0 10px;
+
         }
     }
 
@@ -21,6 +22,7 @@
             margin-bottom: 30px;
 
             h2 {
+                font-family: "Roboto";
                 font-size: 22px;
                 text-decoration: underline;
 
@@ -31,14 +33,32 @@
 
             p {
                 text-align: left;
+                font-family: "Roboto";
                 font-size: 40px;
-                margin-left: 10px;
+
                 color: red;  
             }
 
-            h4 {
-                text-align: left;
+            .texto-variantes {
+                font-size: 18px;
+                font-weight: bold;
             }
+
+            #tamaño, #color, #cantidad {
+                width: 20%;
+                border-radius: none;
+                border-color: rgb(207, 203, 203);
+
+                @media screen and (max-width: 576px) {
+                    width: 30%;
+                }
+
+            }
+
+            // h4 {
+            //     text-align: left;
+            //     font-family: "Roboto";
+            // }
 
             @media screen and (max-width: 576px) {
                 width: 90%;
@@ -76,13 +96,17 @@
              margin: 50px 0 0 0;  
         }
     }
+
+    @media screen and (max-width: 576px) {
+        padding: 10px;
+   }
 }
 
 .description {
     background-color: $bg-color-card;
     border-radius: $border-radius;
     box-shadow: $box-shadow-card;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     padding: 20px;
 
     h2 {

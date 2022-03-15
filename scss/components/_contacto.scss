@@ -1,106 +1,102 @@
-.contenedor-form {
+.contenedor-formulario {
+
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(181, 247, 236, 0.5);
+    margin: auto;
 
     h1 {
-        color: red;
         text-align: center;
-        margin-top: 50px;  
-
+        color: red;
+        margin: 30px 0;
+        padding: 20px 0;
+        font-family: "Roboto";
+        font-size: 3em;
+        font-weight: bold;
+        text-shadow: 1px 2px 4px rgb(194, 189, 189);
+       
         @media screen and (max-width: 576px) {
-            margin-top: 30px; 
-            font-size: 25px;
+            font-size: 1.5em;
+            margin: 0;
         }
     }
 
-    p {
-        padding: 30px;
-        text-align: justify; 
-
-        @media screen and (max-width: 576px) {
-            padding: 0;
-            text-align: justify;
-        }
-    }
-
-    .form {
-        width: 40%;
-        height: 600px;
-        margin: 20px auto 200px;
-        padding-top: 30px;
-        border: 2px dashed black;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media screen and (max-width: 576px) {
-            width: 80%;
-            height: 500px;
-        }
-
-        .input {
-            width: 70%;
-            height: 20px;
-            border-bottom: 1px solid black;
-            padding: 20px;
-            margin: 6px;
-
-            @media screen and (max-width: 576px) {
-                font-size: 12px;
-                width: 80%;
-                height: 20px;
-                border-bottom: 1px solid black;
-            }
-        }
-
-        .mensaje {
-            height: 250px;
-            border: 1px solid black;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-
-        .enviar {
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: red;
-                border: 1px solid red;
-                border-radius: 20px;
-                padding: 2px 25px;
-
-                &:hover {
-                    text-decoration: none;
-                    color: #FFF;
-                    background-color: red;
-                    border: 1px solid red;
-                    border-radius: 20px;
-                    padding: 2px 25px;
-                    transition: all 1s;
-                    box-shadow: $box-shadow-hover;
-                }
-            }
-
-            @media screen and (max-width: 576px) {
-                margin: 10px auto 20px;
-            }
-        }
-    }
-
-    @media screen and (max-width: 576px) {
-        width: 100%;
+    .formulario {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: rgba(99, 94, 94, 0.452);
+        width: 35%;
+        border-radius: 20px;
+        padding: 50px 0;
+        margin: 50px auto 200px;
+
+        @media screen and (max-width: 576px) {
+            width: 90%;
+            margin: 50px auto 100px;
+        }
+     
+
+    
+        .nombre, .apellido, .email, .mensaje {
+            width: 70%;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: "Roboto";
+            color: #FFF;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 576px) {
+                width: 80%;
+                font-size: 12px;
+    
+            }
+    
+        }
+    
+        #nombre, #apellido, #email, #mensaje {
+            width: 70%;
+            margin-bottom: 20px;
+            background-color: transparent;
+
+            @media screen and (max-width: 576px) {
+                width: 80%;
+    
+            }
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid #FFF;
+        }
+
+        textarea {
+            border: 1px solid #FFF;
+        }
+
+        .boton-enviar {
+            background-color: transparent;
+            color: #FFF;
+            font-weight: bold;
+            border: 2px solid #FFF;
+            border-radius: 20px;
+            padding: 2px 30px;
+            margin-top: 40px;
+
+            &:hover {
+                color: #FFF;
+                background-color: red;
+                border: 2px solid red;
+                border-radius: 20px;
+                padding: 2px 30px;
+                transition: all 1s;
+                box-shadow: $box-shadow-hover;
+            }
+        }
+    
+    
     }
 }
