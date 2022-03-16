@@ -408,6 +408,7 @@ h1 {
 .footer-container .footer .contenedor-menu-footer {
   height: auto;
   margin: 10px;
+  width: 15%;
 }
 .footer-container .footer .contenedor-menu-footer .menu-footer {
   height: auto;
@@ -447,12 +448,6 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 576px) {
-  .footer-container .footer .social {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .footer-container .footer .social .redes-sociales {
   text-align: center;
 }
@@ -471,8 +466,17 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   .footer-container .footer .social .redes-sociales a i {
-    font-size: 15px;
-    margin: 2px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-container .footer .social .redes-sociales {
+    margin-bottom: 65px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-container .footer .social {
+    width: 10%;
   }
 }
 .footer-container .medios {
@@ -892,7 +896,7 @@ h1 {
 @media screen and (max-width: 576px) {
   .contenedor-formulario h1 {
     font-size: 1.5em;
-    margin: 0;
+    margin: 20px auto 0;
   }
 }
 .contenedor-formulario .formulario {
