@@ -29,12 +29,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 100px;
 }
 .header-container .header .onda img {
   width: 80%;
 }
 @media screen and (max-width: 576px) {
   .header-container .header .onda {
+    display: none;
+  }
+}
+.header-container .header .carrito {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .header .carrito i {
+  color: red;
+  font-size: 2em;
+}
+@media screen and (max-width: 576px) {
+  .header-container .header .carrito {
     display: none;
   }
 }
