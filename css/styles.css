@@ -126,12 +126,18 @@
 h1 {
   text-align: center;
   color: red;
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 20px 0;
   font-family: "Roboto";
   font-size: 3em;
   font-weight: bold;
   text-shadow: 1px 2px 4px #c2bdbd;
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
 }
 
 .container-productos .row-productos .marco {
@@ -680,8 +686,19 @@ h1 {
 /* Valores para los cuadros de textos descriptivos */
 .section-encabezado .encabezado h1 {
   text-align: center;
-  margin-top: 20px;
   color: red;
+  margin: 30px 0;
+  padding: 20px 0;
+  font-family: "Roboto";
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #c2bdbd;
+}
+@media screen and (max-width: 576px) {
+  .section-encabezado .encabezado h1 {
+    font-size: 2em;
+    margin: 0;
+  }
 }
 
 .container-stickers .row-stickers .descripcion {
@@ -911,7 +928,7 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   .contenedor-formulario h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     margin: 20px auto 0;
   }
 }
@@ -986,6 +1003,23 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section-encabezado .encabezado h1 {
+  text-align: center;
+  color: red;
+  margin: 30px 0;
+  padding: 20px 0;
+  font-family: "Roboto";
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #c2bdbd;
+}
+@media screen and (max-width: 576px) {
+  .section-encabezado .encabezado h1 {
+    font-size: 2em;
+    margin: 0;
+  }
 }
 
 .container-protectores {

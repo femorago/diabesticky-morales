@@ -7,8 +7,18 @@
 
         h1 {
             text-align: center;
-            margin-top: 20px;
             color: red;
+            margin: 30px 0;
+            padding: 20px 0;
+            font-family: "Roboto";
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 1px 2px 4px rgb(194, 189, 189);
+           
+            @media screen and (max-width: 576px) {
+                font-size: 2em;
+                margin: 0;
+            }
         }
     }
 
