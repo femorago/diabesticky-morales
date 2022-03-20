@@ -472,6 +472,7 @@ h1 {
 }
 .footer-container .footer .social .redes-sociales {
   text-align: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 576px) {
   .footer-container .footer .social .redes-sociales h4 {
@@ -629,6 +630,7 @@ h1 {
   font-size: 3em;
   font-weight: bold;
   text-shadow: 1px 2px 4px #c2bdbd;
+  cursor: crosshair;
 }
 @media screen and (max-width: 576px) {
   .titulo-nosotros h1 {
@@ -908,15 +910,7 @@ h1 {
   }
 }
 
-.contenedor-formulario {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(181, 247, 236, 0.5);
-  margin: auto;
-}
-.contenedor-formulario h1 {
+h1 {
   text-align: center;
   color: red;
   margin: 30px 0;
@@ -927,30 +921,35 @@ h1 {
   text-shadow: 1px 2px 4px #c2bdbd;
 }
 @media screen and (max-width: 576px) {
-  .contenedor-formulario h1 {
+  h1 {
     font-size: 2em;
     margin: 20px auto 0;
   }
 }
-.contenedor-formulario .formulario {
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.container p {
+  text-align: center;
+  color: grey;
+}
+.container .formulario {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgba(99, 94, 94, 0.452);
-  width: 35%;
+  width: 90%;
   border-radius: 20px;
   padding: 50px 0;
-  margin: 50px auto 200px;
+  margin: 20px auto 50px;
 }
-@media screen and (max-width: 576px) {
-  .contenedor-formulario .formulario {
-    width: 90%;
-    margin: 50px auto 100px;
-  }
-}
-.contenedor-formulario .formulario .nombre, .contenedor-formulario .formulario .apellido, .contenedor-formulario .formulario .email, .contenedor-formulario .formulario .mensaje {
-  width: 70%;
+.container .formulario .nombre, .container .formulario .apellido, .container .formulario .email, .container .formulario .mensaje {
+  width: 80%;
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Roboto";
@@ -958,29 +957,29 @@ h1 {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 576px) {
-  .contenedor-formulario .formulario .nombre, .contenedor-formulario .formulario .apellido, .contenedor-formulario .formulario .email, .contenedor-formulario .formulario .mensaje {
+  .container .formulario .nombre, .container .formulario .apellido, .container .formulario .email, .container .formulario .mensaje {
     width: 80%;
     font-size: 12px;
   }
 }
-.contenedor-formulario .formulario #nombre, .contenedor-formulario .formulario #apellido, .contenedor-formulario .formulario #email, .contenedor-formulario .formulario #mensaje {
-  width: 70%;
+.container .formulario #nombre, .container .formulario #apellido, .container .formulario #email, .container .formulario #mensaje {
+  width: 80%;
   margin-bottom: 20px;
   background-color: transparent;
 }
 @media screen and (max-width: 576px) {
-  .contenedor-formulario .formulario #nombre, .contenedor-formulario .formulario #apellido, .contenedor-formulario .formulario #email, .contenedor-formulario .formulario #mensaje {
+  .container .formulario #nombre, .container .formulario #apellido, .container .formulario #email, .container .formulario #mensaje {
     width: 80%;
   }
 }
-.contenedor-formulario .formulario input {
+.container .formulario input {
   border: none;
   border-bottom: 1px solid #FFF;
 }
-.contenedor-formulario .formulario textarea {
+.container .formulario textarea {
   border: 1px solid #FFF;
 }
-.contenedor-formulario .formulario .boton-enviar {
+.container .formulario .boton-enviar {
   background-color: transparent;
   color: #FFF;
   font-weight: bold;
@@ -989,7 +988,7 @@ h1 {
   padding: 2px 30px;
   margin-top: 40px;
 }
-.contenedor-formulario .formulario .boton-enviar:hover {
+.container .formulario .boton-enviar:hover {
   color: #FFF;
   background-color: red;
   border: 2px solid red;
@@ -997,6 +996,16 @@ h1 {
   padding: 2px 30px;
   transition: all 1s;
   box-shadow: 2px 2px 10px grey;
+}
+.container .row-datos {
+  padding: 0 0 30px;
+}
+.container .medios-contactos {
+  text-align: center;
+}
+.container .medios-contactos a {
+  text-decoration: none;
+  color: grey;
 }
 
 .container-protectores .row-protectores .producto {

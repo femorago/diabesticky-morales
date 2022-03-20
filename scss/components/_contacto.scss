@@ -1,27 +1,32 @@
-.contenedor-formulario {
+h1 {
+    text-align: center;
+    color: red;
+    margin: 30px 0;
+    padding: 20px 0;
+    font-family: "Roboto";
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 2px 4px rgb(194, 189, 189);
+   
+    @media screen and (max-width: 576px) {
+        font-size: 2em;
+        margin: 20px auto 0;
+    }
+}
 
-    width: 100%;
+.container {
+  
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    background-color: rgba(181, 247, 236, 0.5);
+    // background-color: red;
     margin: auto;
 
-    h1 {
+    p {
         text-align: center;
-        color: red;
-        margin: 30px 0;
-        padding: 20px 0;
-        font-family: "Roboto";
-        font-size: 3em;
-        font-weight: bold;
-        text-shadow: 1px 2px 4px rgb(194, 189, 189);
-       
-        @media screen and (max-width: 576px) {
-            font-size: 2em;
-            margin: 20px auto 0;
-        }
+        color: grey;
     }
+
 
     .formulario {
         display: flex;
@@ -29,20 +34,20 @@
         align-items: center;
         flex-direction: column;
         background-color: rgba(99, 94, 94, 0.452);
-        width: 35%;
+        width: 90%;
         border-radius: 20px;
         padding: 50px 0;
-        margin: 50px auto 200px;
+        margin: 20px auto 50px;
 
         @media screen and (max-width: 576px) {
-            width: 90%;
-            margin: 50px auto 100px;
+
+
         }
      
 
     
         .nombre, .apellido, .email, .mensaje {
-            width: 70%;
+            width: 80%;
             text-transform: uppercase;
             font-size: 14px;
             font-family: "Roboto";
@@ -58,7 +63,7 @@
         }
     
         #nombre, #apellido, #email, #mensaje {
-            width: 70%;
+            width: 80%;
             margin-bottom: 20px;
             background-color: transparent;
 
@@ -98,5 +103,19 @@
         }
     
     
+    }
+
+    .row-datos {
+        padding: 0 0 30px;
+        
+    }
+
+    .medios-contactos {
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: grey;
+        }
     }
 }
