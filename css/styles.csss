@@ -29,12 +29,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 100px;
 }
 .header-container .header .onda img {
   width: 80%;
 }
 @media screen and (max-width: 576px) {
   .header-container .header .onda {
+    display: none;
+  }
+}
+.header-container .header .carrito {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .header .carrito i {
+  color: red;
+  font-size: 2em;
+}
+@media screen and (max-width: 576px) {
+  .header-container .header .carrito {
     display: none;
   }
 }
@@ -110,12 +126,18 @@
 h1 {
   text-align: center;
   color: red;
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 20px 0;
   font-family: "Roboto";
   font-size: 3em;
   font-weight: bold;
   text-shadow: 1px 2px 4px #c2bdbd;
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
 }
 
 .container-productos .row-productos .marco {
@@ -408,6 +430,7 @@ h1 {
 .footer-container .footer .contenedor-menu-footer {
   height: auto;
   margin: 10px;
+  width: 15%;
 }
 .footer-container .footer .contenedor-menu-footer .menu-footer {
   height: auto;
@@ -447,14 +470,9 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 576px) {
-  .footer-container .footer .social {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 .footer-container .footer .social .redes-sociales {
   text-align: center;
+  cursor: pointer;
 }
 @media screen and (max-width: 576px) {
   .footer-container .footer .social .redes-sociales h4 {
@@ -471,8 +489,17 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   .footer-container .footer .social .redes-sociales a i {
-    font-size: 15px;
-    margin: 2px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-container .footer .social .redes-sociales {
+    margin-bottom: 65px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-container .footer .social {
+    width: 10%;
   }
 }
 .footer-container .medios {
@@ -603,6 +630,7 @@ h1 {
   font-size: 3em;
   font-weight: bold;
   text-shadow: 1px 2px 4px #c2bdbd;
+  cursor: crosshair;
 }
 @media screen and (max-width: 576px) {
   .titulo-nosotros h1 {
@@ -660,8 +688,19 @@ h1 {
 /* Valores para los cuadros de textos descriptivos */
 .section-encabezado .encabezado h1 {
   text-align: center;
-  margin-top: 20px;
   color: red;
+  margin: 30px 0;
+  padding: 20px 0;
+  font-family: "Roboto";
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #c2bdbd;
+}
+@media screen and (max-width: 576px) {
+  .section-encabezado .encabezado h1 {
+    font-size: 2em;
+    margin: 0;
+  }
 }
 
 .container-stickers .row-stickers .descripcion {
@@ -719,11 +758,11 @@ h1 {
   }
 }
 .container-stickers .container-row .producto p {
-  margin: 5px auto;
+  margin: auto;
   width: 30%;
   font-size: 25px;
   font-family: "Roboto";
-  text-align: left;
+  text-align: center;
 }
 .container-stickers .container-row .producto a {
   text-decoration: none;
@@ -743,7 +782,7 @@ h1 {
 }
 @media screen and (max-width: 576px) {
   .container-stickers .container-row .producto {
-    padding: 15px;
+    padding: 0 0 15px 0;
     margin: auto;
   }
 }
@@ -871,49 +910,76 @@ h1 {
   }
 }
 
-.contenedor-formulario {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(181, 247, 236, 0.5);
+h1 {
+  text-align: center;
+  color: red;
+  margin: 30px 0;
+  padding: 20px 0;
+  font-family: "Roboto";
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #c2bdbd;
 }
-.contenedor-formulario .formulario {
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2em;
+    margin: 20px auto 0;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+.container p {
+  text-align: center;
+  color: grey;
+}
+.container .formulario {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgba(99, 94, 94, 0.452);
-  width: 35%;
+  width: 90%;
   border-radius: 20px;
   padding: 50px 0;
-  margin-top: 50px;
+  margin: 20px auto 50px;
 }
-@media screen and (max-width: 576px) {
-  .contenedor-formulario .formulario {
-    width: 90%;
-  }
-}
-.contenedor-formulario .formulario .nombre, .contenedor-formulario .formulario .apellido, .contenedor-formulario .formulario .email, .contenedor-formulario .formulario .mensaje {
-  width: 60%;
+.container .formulario .nombre, .container .formulario .apellido, .container .formulario .email, .container .formulario .mensaje {
+  width: 80%;
   text-transform: uppercase;
   font-size: 14px;
   font-family: "Roboto";
   color: #FFF;
+  margin-bottom: 10px;
 }
-.contenedor-formulario .formulario #nombre, .contenedor-formulario .formulario #apellido, .contenedor-formulario .formulario #email, .contenedor-formulario .formulario #mensaje {
-  width: 60%;
+@media screen and (max-width: 576px) {
+  .container .formulario .nombre, .container .formulario .apellido, .container .formulario .email, .container .formulario .mensaje {
+    width: 80%;
+    font-size: 12px;
+  }
+}
+.container .formulario #nombre, .container .formulario #apellido, .container .formulario #email, .container .formulario #mensaje {
+  width: 80%;
   margin-bottom: 20px;
   background-color: transparent;
 }
-.contenedor-formulario .formulario input {
+@media screen and (max-width: 576px) {
+  .container .formulario #nombre, .container .formulario #apellido, .container .formulario #email, .container .formulario #mensaje {
+    width: 80%;
+  }
+}
+.container .formulario input {
   border: none;
   border-bottom: 1px solid #FFF;
 }
-.contenedor-formulario .formulario textarea {
+.container .formulario textarea {
   border: 1px solid #FFF;
 }
-.contenedor-formulario .formulario .boton-enviar {
+.container .formulario .boton-enviar {
   background-color: transparent;
   color: #FFF;
   font-weight: bold;
@@ -922,7 +988,7 @@ h1 {
   padding: 2px 30px;
   margin-top: 40px;
 }
-.contenedor-formulario .formulario .boton-enviar:hover {
+.container .formulario .boton-enviar:hover {
   color: #FFF;
   background-color: red;
   border: 2px solid red;
@@ -931,11 +997,38 @@ h1 {
   transition: all 1s;
   box-shadow: 2px 2px 10px grey;
 }
+.container .row-datos {
+  padding: 0 0 30px;
+}
+.container .medios-contactos {
+  text-align: center;
+}
+.container .medios-contactos a {
+  text-decoration: none;
+  color: grey;
+}
 
 .container-protectores .row-protectores .producto {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section-encabezado .encabezado h1 {
+  text-align: center;
+  color: red;
+  margin: 30px 0;
+  padding: 20px 0;
+  font-family: "Roboto";
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 1px 2px 4px #c2bdbd;
+}
+@media screen and (max-width: 576px) {
+  .section-encabezado .encabezado h1 {
+    font-size: 2em;
+    margin: 0;
+  }
 }
 
 .container-protectores {
@@ -1048,6 +1141,27 @@ h1 {
 
 body {
   background-color: #fffcf9;
+}
+body .btn-whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+}
+body .boton-wp img {
+  width: 80%;
+}
+@media screen and (max-width: 576px) {
+  body .boton-wp img {
+    width: 60%;
+  }
 }
 
 .disclaimer {
